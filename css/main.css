@@ -77,8 +77,6 @@ body {
 
 .cards {
     display: flex;
-    border-radius: 10px;
-    background: var(--white);
     margin-top: 88px;
     padding-bottom: 104px;
 }
@@ -86,6 +84,15 @@ body {
 .card {
     text-align: center;
     padding-bottom: 45px;
+    background: var(--white);
+}
+
+.card:nth-child(1){
+    border-radius: 10px 0px 0px 10px;
+}
+
+.card:nth-child(3){
+    border-radius: 0px 10px 10px 0px;
 }
 
 .card-title {
@@ -136,6 +143,7 @@ body {
 
 .card-center-title {
     color: var(--white);
+    padding-top: 55px;
 }
 
 .card-center-cost {
